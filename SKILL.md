@@ -7,10 +7,10 @@ description: Skill to interact with remote MCP tools via HTTP API. Use this skil
 
 This skill enables interaction with remote MCP tools through HTTP API endpoints.
 
-## Save API **Base URL** and **Token**
+## Manage HTTP API Credentials (base URL and tokens)
 save to `assets/.env`
 
-## Call API
+## Execute Tool Calls
 
 ### API Configuration
 - **Base URL**: Retrieve from users prompt
