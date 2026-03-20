@@ -34,7 +34,7 @@ This skill enables interaction with remote MCP tools through HTTP API endpoints.
 
 ## Workflow
 1. Retrieve API **Base URL** and **Token** from the .env file in workspace. If the Token is unset, retrieve it from the system environment
-2. **Fetch tool categories** and select the one best suited. if no category selected, use category `All Tools`
+2. **Fetch tool categories** and select the best-suited one. If no category is selected, use category `All Tools`
 3. **Fetch tool list** and select the one best suited
 4. Before preparing parameters, your must **Obtain Tool Input Schema**
 5. **Call tool** with parameters
