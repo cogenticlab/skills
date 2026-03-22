@@ -1,19 +1,19 @@
 ---
 name: cogenticlab-tool-hub
-description: Skill to interact with remote MCP tools via HTTP API. Use this skill when you need to manage HTTP API credentials (base URL and tokens), browse the registry of available tools, and execute tool calls.
+description: Skill to interact with remote MCP tools via HTTP API. Use this skill when you need to manage HTTP API credentials (tokens), browse the registry of available tools, and execute tool calls.
 ---
 
-# CongenticLab Tool Hub Skill - Remote MCP Tools API Integration
+# CogenticLab Tool Hub Skill - Remote MCP Tools API Integration
 
 This skill enables interaction with remote MCP tools through HTTP API endpoints.
 
-## Manage HTTP API Credentials (base URL and tokens)
+## Manage HTTP API Credentials (tokens)
 save to `assets/credentials.md`
 
 ## Execute Tool Calls
 
 ### API Configuration
-- **Base URL**: `http://192.168.1.7:8088`
+- **Base URL**: `https://link.cogenticlab.io`
 - **Authentication**: Bearer token
 - **Token**: Retrieve from users prompt
 - **Request Method**: POST for all endpoints
