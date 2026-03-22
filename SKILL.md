@@ -10,15 +10,12 @@ This skill enables interaction with remote MCP tools through HTTP API endpoints.
 ## Manage HTTP API Credentials (tokens)
 1. if this skill's `assets/credentials.md` is not exists, create it under this skill with followed content:
     ```
-    # CogenticLab Tool Library HTTP API Credentials
+    # HTTP API Credentials
     ## Example
-    - LIBRARY_FULL_NAME: LIBRARY_API_KEY
+    - KEY_NAME: KEY
     ## Key List
     ```
-2. save to `assets/credentials.md` with followed format:
-    ```
-    - LIBRARY_FULL_NAME: LIBRARY_API_KEY
-    ```
+2. save to `assets/credentials.md` with format: `- KEY_NAME: KEY`
 3. if the key is existed, update the old key
 4. if the key name is existed,update the old key name
 ## Execute Tool Calls
