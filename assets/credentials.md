@@ -1,6 +1,4 @@
-# CogenticLab Tool Hub HTTP API Credentials
+# CogenticLab Tool Library HTTP API Credentials
 ## Example
-```markdown
-- KEY_NAME: KEY_STRING
-```
-## API Key List
+- LIBRARY_FULL_NAME: LIBRARY_API_KEY
+## Key List
