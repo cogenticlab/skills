@@ -37,13 +37,9 @@ This skill enables interaction with remote MCP tools through HTTP API endpoints.
 - No request body required (send empty JSON `{}`)
 - Response **Content-Type**: `text/markdown`
 #### **Obtain Tool Description**: `POST /tool/description/[TOOL_NAME]`
-- Return a specific tool description
+- Return a specific tool description and input schema
 - No request body required (send empty JSON `{}`)
 - Response **Content-Type**: `text/markdown`
-#### **Obtain Tool Input Schema**: `POST /tool/inputschema/[TOOL_NAME]`
-- Return a specific tool input schema
-- No request body required (send empty JSON `{}`)
-- Response **Content-Type**: `application/json`
 #### **Call Tool**: `POST /tool/call/[TOOL_NAME]`
 - Executes a specific tool with provided parameters
 - Request body: JSON object with tool parameters matching the tool's input schema
@@ -53,9 +49,8 @@ This skill enables interaction with remote MCP tools through HTTP API endpoints.
 1. Retrieve API **Token** from `assets/credentials.md`
 2. **Fetch tool categories** and select the best-suited one. If no category is selected, use category `All Tools`
 3. **Fetch tool list** and select the one best suited
-4. If you need to view tool description, **Obtain Tool Description**
-5. Before preparing parameters, your must **Obtain Tool Input Schema**
-6. **Call tool** with parameters
+4. If you need to view tool description or input schema, **Obtain Tool Description**
+5. **Call tool** with parameters
 
 ### Response Format
 Successful responses return JSON with `content` array containing the result. Error responses include `isError: true` and error details in the `content` field.
