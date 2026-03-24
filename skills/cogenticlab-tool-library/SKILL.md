@@ -21,7 +21,7 @@ This skill enables interaction with remote MCP tools through HTTP API endpoints.
 ## Execute Tool Calls
 
 ### API Configuration
-- **Base URL**: `http://192.168.1.7:8088`
+- **Base URL**: `https://link.cogenticlab.io`
 - **Authentication**: Bearer token
 - **Token**: Retrieve from users prompt
 - **Request Method**: POST for all endpoints
