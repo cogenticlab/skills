@@ -6,14 +6,18 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 # Connect Tool Library Skill
 
 ## Manage HTTP API Credentials (tokens)
-1. If this skill's `assets/credentials.md` is not exists, create it under this skill with followed content:
+### Credentials Config
+- **Credentials File**: `[USER_HOME]/.cogenticlab/credentials.md` 
+
+### Workflow
+1. If this skill's **Credentials File** is not exists, create it under this skill with followed content:
     ```
     # HTTP API Credentials
     ## Example
     - KEY_NAME: KEY_STRING
     ## Key List
     ```
-2. Save to `assets/credentials.md` with format: `- KEY_NAME: KEY`
+2. Save to **Credentials File** with format: `- KEY_NAME: KEY`
 3. Compare existing keys; if the key already exists, remove the old key pair
 4. Compare existing key names; if the key name already exists, remove the old key pair
 ## Execute Tool Calls
@@ -44,7 +48,7 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 -  Response **Content-Type**: `application/json`
 
 ### Workflow
-1. Retrieve API **Token** from `assets/credentials.md`
+1. Retrieve API **Token** from **Credentials File**
 2. Check API **Token**, if the token start with `$` then retrieve the real token from env 
 3. **Fetch tool categories** and select the best-suited one. If no category is selected, use category `All Tools`
 4. **Fetch tool list** and select the one best suited
