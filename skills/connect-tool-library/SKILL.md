@@ -1,6 +1,6 @@
 ---
 name: connect-tool-library
-description: Interact with remote tool libraries via HTTP API. Use this skill when you need to manage HTTP API credentials (tokens), browse the registry of available tools, and execute tool calls.
+description: Interact with remote tool libraries via HTTP API. Use this skill when you need to manage HTTP API credentials (tokens), browse the registry of available tools, and execute tool calls
 ---
 
 # Connect Tool Library Skill
@@ -10,7 +10,7 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
     ```
     # HTTP API Credentials
     ## Example
-    - KEY_NAME: KEY
+    - KEY_NAME: KEY_STRING
     ## Key List
     ```
 2. Save to `assets/credentials.md` with format: `- KEY_NAME: KEY`
@@ -45,10 +45,11 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 
 ### Workflow
 1. Retrieve API **Token** from `assets/credentials.md`
-2. **Fetch tool categories** and select the best-suited one. If no category is selected, use category `All Tools`
-3. **Fetch tool list** and select the one best suited
-4. If you need to view tool description or input schema, **Obtain Tool Description**
-5. **Call tool** with parameters
+2. Check API **Token**, if the token start with `$` then retrieve the real token from env 
+3. **Fetch tool categories** and select the best-suited one. If no category is selected, use category `All Tools`
+4. **Fetch tool list** and select the one best suited
+5. If you need to view tool description or input schema, **Obtain Tool Description**
+6. **Call tool** with parameters
 
 ### Response Format
 Successful responses return JSON with `content` array containing the result. Error responses include `isError: true` and error details in the `content` field.
