@@ -1,23 +1,21 @@
 ---
-name: cogenticlab-tool-library
-description: Skill to interact with remote MCP tools via HTTP API. Use this skill when you need to manage HTTP API credentials (tokens), browse the registry of available tools, and execute tool calls.
+name: connect-tool-library
+description: Interact with remote tool libraries via HTTP API. Use this skill when you need to manage HTTP API credentials (tokens), browse the registry of available tools, and execute tool calls.
 ---
 
-# CogenticLab Tool Library Skill - Remote MCP Tools API Integration
-
-This skill enables interaction with remote MCP tools through HTTP API endpoints.
+# Connect Tool Library Skill
 
 ## Manage HTTP API Credentials (tokens)
-1. if this skill's `assets/credentials.md` is not exists, create it under this skill with followed content:
+1. If this skill's `assets/credentials.md` is not exists, create it under this skill with followed content:
     ```
     # HTTP API Credentials
     ## Example
     - KEY_NAME: KEY
     ## Key List
     ```
-2. save to `assets/credentials.md` with format: `- KEY_NAME: KEY`
-3. if the key is existed, update the old key
-4. if the key name is existed,update the old key name
+2. Save to `assets/credentials.md` with format: `- KEY_NAME: KEY`
+3. Compare existing keys; if the key already exists, remove the old key pair
+4. Compare existing key names; if the key name already exists, remove the old key pair
 ## Execute Tool Calls
 
 ### API Configuration
