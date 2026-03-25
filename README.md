@@ -5,4 +5,4 @@ Interact with remote tool libraries via HTTP API. Use this skill when you need t
 - **98% token** savings on tool invocations
 - **No MCP client** needed to call MCP tools
 - Turn **OpenAPI servers** into tools instantly
-- Works with any **agent skill**
+- Works with **any agent skill**
