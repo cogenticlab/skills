@@ -20,6 +20,7 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 2. Save to **Credentials File** with format: `- KEY_NAME: KEY`
 3. Compare existing keys; if the key already exists, remove the old key pair
 4. Compare existing key names; if the key name already exists, remove the old key pair
+
 ## Execute Tool Calls
 
 ### API Configuration
