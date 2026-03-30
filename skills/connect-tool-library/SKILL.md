@@ -11,12 +11,12 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 
 ### Workflow
 1. If this skill's **Credentials File** is not exists, create it under this skill with followed content:
-    ```
-    # HTTP API Credentials
-    ## Example
-    - KEY_NAME: KEY_STRING
-    ## Key List
-    ```
+   ```
+   # HTTP API Credentials
+   ## Example
+   - KEY_NAME: KEY_STRING
+   ## Key List
+   ```
 2. Save to **Credentials File** with format: `- KEY_NAME: KEY`
 3. Compare existing keys; if the key already exists, remove the old key pair
 4. Compare existing key names; if the key name already exists, remove the old key pair
@@ -36,7 +36,16 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 - No request body required (send empty JSON `{}`)
 - Response **Content-Type**: `application/json`
 #### **Fetch Tool List**: `POST /tool/list/[CATEGORY_NAME]`
-- Returns list of all available tools with their descriptions
+- Returns list of all available tools and tags. the format is :
+  ```markdown
+  # Available Tools
+  ## With Parameters
+  - tool_name: tag
+  ## No Parameters
+  - tool_name: tag
+  ## Tags
+  - tag: tag_description
+  ```
 - No request body required (send empty JSON `{}`)
 - Response **Content-Type**: `text/markdown`
 #### **Obtain Tool Description**: `POST /tool/description/[TOOL_NAME]`
@@ -47,6 +56,10 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 - Executes a specific tool with provided parameters
 - Request body: JSON object with tool parameters matching the tool's input schema
 -  Response **Content-Type**: `application/json`
+
+### Authentication Setup
+if **Credentials File** is not exists, **Prompt the user**: `No tool library API token found, create a tool library in Cogentic Hub. Download and install Cogentic Hub first (https://github.com/cogenticlab/cogenticlab/)`
+
 
 ### Workflow
 1. Retrieve API **Token** from **Credentials File**
@@ -65,8 +78,7 @@ Successful responses return JSON with `content` array containing the result. Err
 - **JSON Format**: Request bodies must be valid JSON matching the tool's input schema
 - **Error Handling**: Check `isError` field in responses to detect failures
 
-### Troubleshooting
-
+### Troubleshooting 
 - **Authentication Errors**: Verify the bearer token is correct
 - **Tool Not Found**: Check tool name spelling and fetch tool list
 - **Invalid Parameters**: Review tool input schema for required fields
