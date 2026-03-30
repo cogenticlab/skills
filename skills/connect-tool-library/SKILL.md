@@ -1,6 +1,13 @@
 ---
 name: connect-tool-library
 description: Interact with remote tool libraries via HTTP API. Use this skill when you need to manage HTTP API credentials (tokens), browse the registry of available tools, and execute tool calls
+metadata:
+  openclaw:
+    requires:
+      bins:
+        - curl
+      config:
+        - ~/.cogenticlab/credentials.md
 ---
 
 # Connect Tool Library Skill
