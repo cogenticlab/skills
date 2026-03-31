@@ -65,8 +65,7 @@ metadata:
 -  Response **Content-Type**: `application/json`
 
 ### Authentication Setup
-if **Credentials File** is not exists, **Prompt the user**: `No tool library API token found, create a tool library in Cogentic Hub. Download and install Cogentic Hub first (https://github.com/cogenticlab/cogenticlab/)`
-
+if **Credentials File** is not exists, **Prompt the user**: `No tool library API token found, create a tool library in Cogentic Hub. Download and install Cogentic Hub first (https://github.com/cogenticlab/cogentichub/)`
 
 ### Workflow
 1. Retrieve API **Token** from **Credentials File**
