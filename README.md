@@ -8,7 +8,7 @@ Interact with remote tool libraries via HTTP API. Use this skill when you need t
 - Works with **any agent skill**
 
 # AI Agent can access all user-registered tools
-[Cogentic Hub CLI](https://github.com/cogenticlab/cogentichub/)
+[Cogentic Hub](https://github.com/cogenticlab/cogentichub/)
 
 - Establish a Tool Library to allocate tools on demand
 - Different Tool Library keys allow access to different tool sets
