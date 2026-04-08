@@ -6,3 +6,5 @@ Interact with remote tool libraries via HTTP API. Use this skill when you need t
 - **No MCP client** needed to call MCP tools
 - Turn **OpenAPI servers** into tools instantly
 - Works with **any agent skill**
+
+![cogentic_cli_workflow.png](assets/image/cogentic_cli_workflow.png)
