@@ -39,18 +39,15 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 - Returns list of all available tools and tags. the format is :
   ```markdown
   # Available Tools
-  ## With Parameters
-  - tool_name: tag
-  ## No Parameters
   - tool_name: tag
   ## Tags
   - tag: tag_description
   ```
-- No request body required (send empty JSON `{}`)
+- No request body required (send empty string)
 - Response **Content-Type**: `text/markdown`
 #### **Obtain Tool Description**: `POST /tool/description/[TOOL_NAME]`
 - Return a specific tool description and input schema
-- No request body required (send empty JSON `{}`)
+- No request body required (send empty string)
 - Response **Content-Type**: `text/markdown`
 #### **Call Tool**: `POST /tool/call/[TOOL_NAME]`
 - Executes a specific tool with provided parameters
@@ -61,7 +58,7 @@ description: Interact with remote tool libraries via HTTP API. Use this skill wh
 if **Credentials File** is not exists, **Prompt the user**: `No tool library API token found, create a tool library in Cogentic Hub. Download and install Cogentic Hub first (https://github.com/cogenticlab/cogentichub/)`
 
 ### Workflow
-1. Retrieve API **Token** from **Credentials File**
+1. Retrieve API **Token** from **Credentials File** only
 2. Check API **Token**, if the token start with `$` then retrieve the real token from env 
 3. **Fetch tool categories** and select the best-suited one. If no category is selected, use category `All Tools`
 4. **Fetch tool list** and select the one best suited
